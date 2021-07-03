@@ -4,6 +4,7 @@ import React from "react";
 import Carousel from "../../components/Carousel/Carousel";
 import Hero from "../../components/Hero/Hero";
 import News from "../../components/News/News";
+import Galery from "../../components/Galery/Galery"
 // FILES
 import "./MainPage.css";
 
@@ -21,6 +22,7 @@ function MainPage() {
       <div className="m-main-con">
         <Carousel />
         <News />
+        <Galery />
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

@@ -1,0 +1,39 @@
+/* GALERY START */
+.m-galery {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m-galery-box {
+    margin-top: 15px;
+    list-style: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px,200px) );
+    gap: 5px;
+}
+.m-galery-box > li > img {
+    display: block;
+    width: 100%;
+    filter: brightness(.8);
+    transition: 0.3s;
+}
+.m-galery-box > li > img:hover {
+    filter: brightness(1.2);
+}
+/* GALERY END */
+
+/* MOBILE BREAKPOINTS START*/
+@media (max-width:576px){
+    .m-galery-box {
+        margin: 15px auto;
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+}
+/* MOBILE BREAKPOINTS END */
