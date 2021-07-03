@@ -1,92 +1,155 @@
 /* NAVBAR START */
 .m-nav {
-    background-color: #16161D;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #16161d;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  z-index: 10;
 }
 .m-nav-brand {
-    padding: 10px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .m-nav-brand > img {
-    display: block;
-    width: 35px;
-    height: 35px;
+  display: block;
+  width: 35px;
+  height: 35px;
 }
 .m-nav-brand > h2 {
-    color: white;
-    margin-left: 5px;
-    padding-left: 2px;
-    font-size: 1.3em;
-    border-left: 2px solid white;
+  color: white;
+  margin-left: 5px;
+  padding-left: 2px;
+  font-size: 1.3em;
+  border-left: 2px solid white;
 }
 .m-nav-menu-icon {
-    text-align: end;
-    /* background-color: red; */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
+  text-align: end;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 /* NAVBAR END */
 .m-expand {
-    background-color: #16161d;
-    color: white;
-    list-style: none;
-    position: fixed;
-    right: -400px;
-    width: 50vh;
-    height: 100vh;
-    transition: 0.3s;
+  background-color: #16161d;
+  color: white;
+  list-style: none;
+  position: fixed;
+  right: -400px;
+  width: 50vh;
+  height: 100vh;
+  transition: 0.3s;
 }
 .m-restore {
-    right: 0;
+  right: 0;
 }
 .m-expand-link {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
 }
 .m-expand-link:hover {
-    background-color: white;
-    color: #16161D;
+  background-color: white;
+  color: #16161d;
 }
 .m-expand-link > div {
-    display: none;
+  display: none;
 }
 .m-expand-link > div > * {
-    display: block;
-    padding-left: 10px;
+  display: block;
+  padding-left: 10px;
 }
 .m-expand-link:hover div {
-    display: inherit;
+  display: inherit;
 }
 /* NAVBAR EXPAND START */
 
+/* NAVBAR NEWS START*/
+.m-nav-news {
+  position: fixed;
+  width: 100%;
+  top: -300px;
+  background-color: white;
+  display: grid;
+  padding: 10px;
+  padding-left: 20px;
+  grid-template-columns: 150px 1.5fr;
+  grid-template-rows: 185px;
+  transition: 0.3s;
+  height: max-content;
+}
+.m-nav-news > div {
+  text-align: center;
+}
+.m-nav-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* height: 185px; */
+}
+.m-nav-news > ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 275px));
+  gap: 10px;
+}
+.m-nav-restore {
+  top: 50px;
+}
+/* NAVBAR NEWS END */
 
 /* NAVBAR EXPAND END */
 
 /* MOBILE BREAKPOINT END*/
 @media (max-width: 576px) {
-    /* NAVBAR START */
-    .m-nav-brand > h2 {
-        font-size: 1em;
-    }
-    /* NAVBAR END */
+  /* NAVBAR START */
+  .m-nav-brand > h2 {
+    font-size: 1em;
+  }
+  /* NAVBAR END */
 
-    /* NAVBAR EXPAND START */
-    .m-expand {
-        left: 0;
-        top: -1300px;
-    }
-    .m-restore {
-        top: 50px;
-    }
-    
-    /* NAVBAR EXPAND END */
+  /* NAVBAR EXPAND START */
+  .m-expand {
+    width: 100%;
+    left: 0;
+    top: -1300px;
+  }
+  .m-restore {
+    top: 50px;
+  }
+  /* NAVBAR EXPAND END */
+
+  /* NAVBAR NEWS START */
+  .m-nav-news {
+      grid-template-columns: 95%;
+      justify-content: center;
+      grid-template-rows: repeat(auto-fill, 185px );
+  }
+  .m-nav-news > div {
+      display: none;
+  }
+  .m-nav-news > ul {
+      /* background-color: red; */
+      grid-template-columns: 100%;
+      justify-content: center;
+      grid-template-row: repeat(auto-fit, 150px );
+      /* margin: 0; */
+      padding: 0;
+  }
+  .m-nav-news {
+      top: -1400px;
+      height: 100vh;
+  }
+  .m-nav-restore {
+      top: 50px;
+  }
+  /* NAVBAR NEWS END */
 }
 /* MOBILE BREAKPOINT END */
