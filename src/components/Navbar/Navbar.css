@@ -18,6 +18,21 @@
   display: block;
   width: 35px;
   height: 35px;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.m-nav-brand > img:hover {
+  animation-name: grow;
 }
 .m-nav-brand > h2 {
   color: white;
@@ -35,7 +50,15 @@
   padding: 10px;
   box-sizing: border-box;
 }
+.m-nav-menu-icon > button {
+  transition: 0.3s;
+}
+.m-nav-menu-icon > button:active {
+  transform: scale(1.2);
+}
 /* NAVBAR END */
+
+/* NAVBAR EXPAND START */
 .m-expand {
   background-color: #16161d;
   color: white;
@@ -45,6 +68,7 @@
   width: 50vh;
   height: 100vh;
   transition: 0.3s;
+  z-index: 9;
 }
 .m-restore {
   right: 0;
@@ -69,7 +93,7 @@
 .m-expand-link:hover div {
   display: inherit;
 }
-/* NAVBAR EXPAND START */
+/* NAVBAR EXPAND END */
 
 /* NAVBAR NEWS START*/
 .m-nav-news {
@@ -79,11 +103,13 @@
   background-color: white;
   display: grid;
   padding: 10px;
+  padding-bottom: 30px;
   padding-left: 20px;
   grid-template-columns: 150px 1.5fr;
   grid-template-rows: 185px;
   transition: 0.3s;
   height: max-content;
+  z-index: 9;
 }
 .m-nav-news > div {
   text-align: center;
@@ -105,9 +131,8 @@
 }
 /* NAVBAR NEWS END */
 
-/* NAVBAR EXPAND END */
 
-/* MOBILE BREAKPOINT END*/
+/* MOBILE BREAKPOINT START*/
 @media (max-width: 576px) {
   /* NAVBAR START */
   .m-nav-brand > h2 {

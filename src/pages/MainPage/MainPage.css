@@ -1,0 +1,13 @@
+/* MAIN PAGE START*/
+.m-main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* MAIN PAGE END */
+
+/* MOBILE BREAKPOINT START */
+@media (max-width:576px){
+
+}
+/* MOBILE BREAKPOINT END */

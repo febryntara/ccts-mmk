@@ -1,0 +1,25 @@
+/* CAROUSEL START */
+.m-car {
+    width: 80%;
+    margin: auto;
+}
+.m-carousel {
+    /* background-color: red; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 300px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-carousel-image {
+    display: block;
+    width: 40%;
+}
+.m-carousel-info > h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* CAROUSEL END */
