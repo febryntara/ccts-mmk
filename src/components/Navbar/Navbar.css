@@ -1,0 +1,92 @@
+/* NAVBAR START */
+.m-nav {
+    background-color: #16161D;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.m-nav-brand {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.m-nav-brand > img {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.m-nav-brand > h2 {
+    color: white;
+    margin-left: 5px;
+    padding-left: 2px;
+    font-size: 1.3em;
+    border-left: 2px solid white;
+}
+.m-nav-menu-icon {
+    text-align: end;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* NAVBAR END */
+.m-expand {
+    background-color: #16161d;
+    color: white;
+    list-style: none;
+    position: fixed;
+    right: -400px;
+    width: 50vh;
+    height: 100vh;
+    transition: 0.3s;
+}
+.m-restore {
+    right: 0;
+}
+.m-expand-link {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.m-expand-link:hover {
+    background-color: white;
+    color: #16161D;
+}
+.m-expand-link > div {
+    display: none;
+}
+.m-expand-link > div > * {
+    display: block;
+    padding-left: 10px;
+}
+.m-expand-link:hover div {
+    display: inherit;
+}
+/* NAVBAR EXPAND START */
+
+
+/* NAVBAR EXPAND END */
+
+/* MOBILE BREAKPOINT END*/
+@media (max-width: 576px) {
+    /* NAVBAR START */
+    .m-nav-brand > h2 {
+        font-size: 1em;
+    }
+    /* NAVBAR END */
+
+    /* NAVBAR EXPAND START */
+    .m-expand {
+        left: 0;
+        top: -1300px;
+    }
+    .m-restore {
+        top: 50px;
+    }
+    
+    /* NAVBAR EXPAND END */
+}
+/* MOBILE BREAKPOINT END */
