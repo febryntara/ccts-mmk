@@ -1,0 +1,24 @@
+/* HERO START */
+.m-hero {
+    background-image: url(../../assets/main.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+.m-hero > h3 {
+    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3em;
+}
+/* HERO RND */
+
+/* MOBILE BREAKPOIN START*/
+@media (max-width:576px){
+    .m-hero {
+        height: 300px;
+    }
+}
+/* MOBILE BREAKPOIN END */
