@@ -1,5 +1,5 @@
 // LIBRARY
-import React from "react";
+import React, { useState } from "react";
 // FILES
 import "../../components/Galery/Galery.css";
 import image1 from "../../assets/bali1.jpg";
@@ -26,6 +26,29 @@ import image21 from "../../assets/bali21.jpg";
 import image22 from "../../assets/bali22.jpg";
 
 function Galery() {
+    const [display1, setDisplay1] = useState(false)
+    const [display2, setDisplay2] = useState(false)
+    const [display3, setDisplay3] = useState(false)
+    const [display4, setDisplay4] = useState(false)
+    const [display5, setDisplay5] = useState(false)
+    const [display6, setDisplay6] = useState(false)
+    const [display7, setDisplay7] = useState(false)
+    const [display8, setDisplay8] = useState(false)
+    const [display9, setDisplay9] = useState(false)
+    const [display10, setDisplay10] = useState(false)
+    const [display11, setDisplay11] = useState(false)
+    const [display12, setDisplay12] = useState(false)
+    const [display13, setDisplay13] = useState(false)
+    const [display14, setDisplay14] = useState(false)
+    const [display15, setDisplay15] = useState(false)
+    const [display16, setDisplay16] = useState(false)
+    const [display17, setDisplay17] = useState(false)
+    const [display18, setDisplay18] = useState(false)
+    const [display19, setDisplay19] = useState(false)
+    const [display20, setDisplay20] = useState(false)
+    const [display21, setDisplay21] = useState(false)
+    const [display22, setDisplay22] = useState(false)
+    
   return (
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -38,28 +61,72 @@ function Galery() {
       <div className="m-galery">
         <h4>Galery</h4>
         <ul className="m-galery-box">
-          <li><img src={image1} alt="" /></li>
-          <li><img src={image2} alt="" /></li>
-          <li><img src={image3} alt="" /></li>
-          <li><img src={image4} alt="" /></li>
-          <li><img src={image5} alt="" /></li>
-          <li><img src={image6} alt="" /></li>
-          <li><img src={image7} alt="" /></li>
-          <li><img src={image8} alt="" /></li>
-          <li><img src={image9} alt="" /></li>
-          <li><img src={image10} alt="" /></li>
-          <li><img src={image11} alt="" /></li>
-          <li><img src={image12} alt="" /></li>
-          <li><img src={image13} alt="" /></li>
-          <li><img src={image14} alt="" /></li>
-          <li><img src={image15} alt="" /></li>
-          <li><img src={image16} alt="" /></li>
-          <li><img src={image17} alt="" /></li>
-          <li><img src={image18} alt="" /></li>
-          <li><img src={image19} alt="" /></li>
-          <li><img src={image20} alt="" /></li>
-          <li><img src={image21} alt="" /></li>
-          <li><img src={image22} alt="" /></li>
+          <li onClick={()=> setDisplay1(!display1)}>
+            <img className={display1 ? "m-peek" : null} src={image1} alt="" />
+          </li>
+          <li onClick={()=> setDisplay2(!display2)}>
+            <img className={display2 ? "m-peek" : null} src={image2} alt="" />
+          </li>
+          <li onClick={()=> setDisplay3(!display3)}>
+            <img className={display3 ? "m-peek" : null} src={image3} alt="" />
+          </li>
+          <li onClick={()=> setDisplay4(!display4)}>
+            <img className={display4 ? "m-peek" : null} src={image4} alt="" />
+          </li>
+          <li onClick={()=> setDisplay5(!display5)}>
+            <img className={display5 ? "m-peek" : null} src={image5} alt="" />
+          </li>
+          <li onClick={()=> setDisplay6(!display6)}>
+            <img className={display6 ? "m-peek" : null} src={image6} alt="" />
+          </li>
+          <li onClick={()=> setDisplay7(!display7)}>
+            <img className={display7 ? "m-peek" : null} src={image7} alt="" />
+          </li>
+          <li onClick={()=> setDisplay8(!display8)}>
+            <img className={display8 ? "m-peek" : null} src={image8} alt="" />
+          </li>
+          <li onClick={()=> setDisplay9(!display9)}>
+            <img className={display9 ? "m-peek" : null} src={image9} alt="" />
+          </li>
+          <li onClick={()=> setDisplay10(!display10)}>
+            <img className={display10 ? "m-peek" : null} src={image10} alt="" />
+          </li>
+          <li onClick={()=> setDisplay11(!display11)}>
+            <img className={display11 ? "m-peek" : null} src={image11} alt="" />
+          </li>
+          <li onClick={()=> setDisplay12(!display12)}>
+            <img className={display12 ? "m-peek" : null} src={image12} alt="" />
+          </li>
+          <li onClick={()=> setDisplay13(!display13)}>
+            <img className={display13 ? "m-peek" : null} src={image13} alt="" />
+          </li>
+          <li onClick={()=> setDisplay14(!display14)}>
+            <img className={display14 ? "m-peek" : null} src={image14} alt="" />
+          </li>
+          <li onClick={()=> setDisplay15(!display15)}>
+            <img className={display15 ? "m-peek" : null} src={image15} alt="" />
+          </li>
+          <li onClick={()=> setDisplay16(!display16)}>
+            <img className={display16 ? "m-peek" : null} src={image16} alt="" />
+          </li>
+          <li onClick={()=> setDisplay17(!display17)}>
+            <img className={display17 ? "m-peek" : null} src={image17} alt="" />
+          </li>
+          <li onClick={()=> setDisplay18(!display18)}>
+            <img className={display18 ? "m-peek" : null} src={image18} alt="" />
+          </li>
+          <li onClick={()=> setDisplay19(!display19)}>
+            <img className={display19 ? "m-peek" : null} src={image19} alt="" />
+          </li>
+          <li onClick={()=> setDisplay20(!display20)}>
+            <img className={display20 ? "m-peek" : null} src={image20} alt="" />
+          </li>
+          <li onClick={()=> setDisplay21(!display21)}>
+            <img className={display21 ? "m-peek" : null} src={image21} alt="" />
+          </li>
+          <li onClick={()=> setDisplay22(!display22)}>
+            <img className={display22 ? "m-peek" : null} src={image22} alt="" />
+          </li>
         </ul>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

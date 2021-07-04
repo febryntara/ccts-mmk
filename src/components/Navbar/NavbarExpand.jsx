@@ -28,11 +28,6 @@ function NavbarExpand({ display }) {
         </Link>
       </li>
       <li>
-        <Link to="/objek-wisata" className="m-expand-link">
-          OBJEK WISATA
-        </Link>
-      </li>
-      <li>
         <Link to="/galery" className="m-expand-link">
           GALERY
         </Link>

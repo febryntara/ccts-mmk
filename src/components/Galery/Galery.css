@@ -1,43 +1,72 @@
 /* GALERY START */
 .m-galery {
-    width: 80%;
-    margin: 50px auto;
-    padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 80%;
+  margin: 50px auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .m-galery-box {
-    margin-top: 15px;
-    list-style: none;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px,200px) );
-    gap: 5px;
+  margin-top: 15px;
+  list-style: none;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  gap: 5px;
 }
 .m-galery-box > li > img {
-    display: block;
-    width: 100%;
-    filter: brightness(.8);
-    transition: 0.3s;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  filter: brightness(0.8);
+  transition: 0.3s;
+  cursor: pointer;
 }
 .m-galery-box > li > img:hover {
-    filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 .m-galery-box > li > img:active {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 /* GALERY END */
 
+/* PEEK START */
+.m-peek {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 10vh 60vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(22, 22, 29, 0.6);
+  z-index: 11;
+}
+/* PEEK END */
 /* MOBILE BREAKPOINTS START*/
-@media (max-width:576px){
-    .m-galery-box {
-        margin: 15px auto;
-        padding: 0;
-        grid-template-columns: 100%;
-    }
+@media (max-width: 576px) {
+  .m-galery-box {
+    margin: 15px auto;
+    padding: 0;
+    grid-template-columns: 100%;
+  }
+  .m-peek {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 25vh 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 22, 29, 0.6);
+  }
 }
 /* MOBILE BREAKPOINTS END */
