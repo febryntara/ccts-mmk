@@ -14,7 +14,7 @@ function NavbarExpand({ display }) {
           LAYANAN
           <div>
             <Link className="link" to="/e-ktp">E-KTP</Link>
-            <Link className="link" to="/vaksin">VAKSIN</Link>
+            <Link className="link" to="/perizinan">PERIZINAN</Link>
           </div>
         </Link>
       </li>
@@ -22,7 +22,7 @@ function NavbarExpand({ display }) {
         <Link className="m-expand-link">
           INFORMASI
           <div>
-            <Link className="link" to="/e-ktp">BERITA</Link>
+            <Link className="link" to="/berita">BERITA</Link>
             <Link className="link" to="/vaksin">VAKSIN</Link>
           </div>
         </Link>

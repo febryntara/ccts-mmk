@@ -64,6 +64,7 @@
   color: white;
   list-style: none;
   position: fixed;
+  top: 50px;
   right: -400px;
   width: 50vh;
   height: 100vh;
@@ -155,7 +156,7 @@
     top: -1300px;
   }
   .m-restore {
-    top: 50px;
+    top: 60px;
   }
   /* NAVBAR EXPAND END */
 
