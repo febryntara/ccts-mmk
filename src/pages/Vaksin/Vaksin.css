@@ -1,0 +1,25 @@
+/* VAKSIN START */
+.m-info-vaksin {
+  width: 100%;
+}
+.m-info-vaksin-con {
+  width: 80%;
+  margin: 10px auto;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 60px;
+  /* background-color: salmon; */
+}
+.m-info-vaksin-con > h2,
+.m-info-vaksin-con > h3,
+.m-info-vaksin-con > p {
+  text-align: center;
+}
+.m-info-vaksin-data {
+  width: 200px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #16161d;
+  color: white;
+}
+/* VAKSIN END */
