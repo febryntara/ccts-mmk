@@ -22,7 +22,7 @@ function NavbarExpand({ display }) {
         <Link className="m-expand-link">
           INFORMASI
           <div>
-            <Link className="link" to="/berita">BERITA</Link>
+            {/* <Link className="link" to="/berita">BERITA</Link> */}
             <Link className="link" to="/vaksin">VAKSIN</Link>
           </div>
         </Link>
