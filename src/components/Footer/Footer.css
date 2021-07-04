@@ -1,5 +1,6 @@
 /* FOOTER START */
 .m-footer {
+    margin-top: -5px;
     flex-direction: column;
     background-color: #16161d;
     color: white;
