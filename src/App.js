@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Ektp from './pages/Ektp/Ektp';
 import Galery from './pages/Galery/Galery';
 import MainPage from './pages/MainPage/MainPage';
+import Perijinan from './pages/Perijinan/Perijinan';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path='/' exact><MainPage /></Route>
       <Route path="/e-ktp"><Ektp /></Route>
       <Route path="/galery"><Galery /></Route>
+      <Route path="/perizinan"><Perijinan /></Route>
     </Switch>
     <Footer />
     </Router>

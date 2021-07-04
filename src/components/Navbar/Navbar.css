@@ -65,7 +65,7 @@
   list-style: none;
   position: fixed;
   top: 50px;
-  right: -400px;
+  right: -800px;
   width: 50vh;
   height: 100vh;
   transition: 0.3s;
@@ -100,7 +100,7 @@
 .m-nav-news {
   position: fixed;
   width: 100%;
-  top: -300px;
+  top: -800px;
   background-color: white;
   display: grid;
   padding: 10px;

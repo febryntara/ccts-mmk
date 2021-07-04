@@ -1,0 +1,29 @@
+/* PERIJINAN START */
+.m-serv-ijin {
+  width: 100%;
+}
+.m-serv-ijin-con {
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  margin: 10px auto;
+}
+.m-serv-ijin-con > img {
+    margin-bottom: 20px;
+}
+/* PERIJINAN END */
+
+/* MOBILE BREAKPOINTS START */
+@media (max-width: 576px) {
+  .m-serv-ijin-con > h2 {
+    font-size: 1.2em;
+  }
+  .m-serv-ijin-con > ul {
+      font-size: minmax(.8em,1em);
+  }
+  .m-serv-ijin-con > img {
+      display: block;
+      width: 100%;
+  }
+}
+/* MOBILE BREAKPOINT END */
