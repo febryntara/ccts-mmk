@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Vaksin.css";
 
 function Vaksin() {
-  const initialState = 30245;
+  const initialState = 180245;
   const [count, setCount] = useState(initialState);
   useEffect(() => {
     const interval = setInterval(() => setCount(count + 3), 2000);
