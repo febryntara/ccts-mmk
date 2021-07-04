@@ -30,9 +30,13 @@
     align-items: flex-end;
     filter: brightness(0.7);
     transition: 0.3s;
+    cursor: pointer;
 }
 .m-news-item:hover {
     filter: brightness(1.2);
+}
+.m-news-item:active {
+    transform: scale(1.2);
 }
 .m-news-item > p {
     color: white;

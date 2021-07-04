@@ -22,9 +22,13 @@
     width: 100%;
     filter: brightness(.8);
     transition: 0.3s;
+    cursor: pointer;
 }
 .m-galery-box > li > img:hover {
     filter: brightness(1.2);
+}
+.m-galery-box > li > img:active {
+    transform: scale(1.2);
 }
 /* GALERY END */
 

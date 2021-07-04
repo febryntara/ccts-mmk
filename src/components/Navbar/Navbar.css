@@ -118,7 +118,15 @@
   display: block;
   width: 100%;
   height: 100%;
+  filter: brightness(0.6);
+  transition: 0.3s;
   /* height: 185px; */
+}
+.m-nav-image:hover {
+  filter: brightness(1);
+}
+.m-nav-image:active {
+  transform: scale(1.2);
 }
 .m-nav-news > ul {
   display: grid;
