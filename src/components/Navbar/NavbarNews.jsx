@@ -12,7 +12,7 @@ function NavbarNews({ display }) {
     <div className={display ? "m-nav-news m-nav-restore" : "m-nav-news"}>
       <div>
         <img className="m-nav-image type1" src={camat} alt="" />
-        <h5>OUR LORD</h5>
+        <h5>Camat</h5>
       </div>
       <ul>
         <li>
